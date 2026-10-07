@@ -1,0 +1,50 @@
+# ==========================================
+# DATA ANALYTICS & PROJECT SPECIFIC
+# ==========================================
+
+# 1. Large Data & Source Files (Keep Git fast)
+# Blocks large raw datasets. If you need tiny sample datasets, 
+# track them explicitly or store data in a /data folder and ignore it.
+*.csv
+*.xlsx
+*.xlsm
+*.xls
+*.tsv
+*.json
+*.xml
+
+# 2. Tableau Specific Files
+# Ignore Tableau local extracts and auto-saved recovery files
+*.hyper
+*.tde
+*.twbr
+_twbr/
+
+# 3. Environment & Security Credentials (CRITICAL)
+# Never track passwords, database credentials, or API keys
+.env
+*.env
+config.ini
+secrets.json
+*.pem
+*.pkcs12
+*.pfx
+
+# 4. SQL / Database Local Artifacts
+# Blocks local database dumps or query history logs
+*.sql.log
+*.sqlite
+*.db
+.dbeaver/
+.dbvis/
+
+# 5. Future-Proofing: Python & Jupyter Notebooks
+# If you expand into Python, this keeps cache and checkpoints clean
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+ENV/
