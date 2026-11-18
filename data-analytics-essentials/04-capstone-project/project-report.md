@@ -20,7 +20,8 @@ The raw dataset contained inconsistent entries, missing values, and unformatted 
 ### 📋 Cleaning & Parsing Pipeline Execution
 * **Deduplication:** Applied Excel's `Data -> Remove Duplicates` tool against the core `movie_id` identifier to eradicate duplicate data row injections.
 * **Structural Parsing:** Extracted the primary genre from nested string formats using text boundaries to create a standardized `clean_genre` column.
-* **Financial Data Masking:** Isolated missing numeric variables (`0` or blank variables in critical categories like financial `budget` or `revenue`). Created a validation schema to flag records fit for economic scoring:
+* **Financial Data Masking:** Isolated missing numeric variables (`0` or blank variables in critical categories like financial `budget` or `revenue`). 
+Created a validation schema to flag records fit for economic scoring:
   ```excel
   =IF(AND(A2>0, M2>0), "Valid Portfolio", "Exclude From Calculations")
   ```
@@ -29,6 +30,7 @@ The raw dataset contained inconsistent entries, missing values, and unformatted 
 ---
 
 ## 🔍 Step 2: Relational Database Ingestion & Querying (SQL)
+
 To prepare the dataset for scalable analytical querying, the clean data was moved into a relational database management system (RDBMS).
 
 ### 💾 Relational Infrastructure Construction Schema
