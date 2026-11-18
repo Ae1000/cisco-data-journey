@@ -1,12 +1,18 @@
-# 🔍 Relational Databases & Structured Queries (Modules 6–7)
+# 🔍 Module 02: Relational Database Ingestion & Querying (SQL)
 
-This directory houses my structured SQL development pipeline, including custom table definitions and advanced database optimization queries.
+## Database Architecture
+* **Engine:** MariaDB / MySQL (via XAMPP)
+* **Database:** `tmdb_portfolio_db`
+* **Table:** `tmdb_movies` (14 columns mapped from cleaned dataset)
 
-## 📁 Covered Modules & Deliverables
-* **Module 6: Intro to Relational Databases** — Database structure mapping, entity relationship profiling, data type mapping, and **Primary Key** configuration.
-* **Module 7: Introduction to Structured Queries** — Production of descriptive querying scripts using analytical operations.
+## Analytical Queries Executed
 
-## 🛠️ Key Querying Architectures Implemented
-* **Filtering & Aggregations:** Running group checks via `SELECT`, `WHERE`, `GROUP BY`, and `HAVING`.
-* **Relational Joins:** Linking distinct structural dimensions utilizing robust multi-table `INNER JOIN` frameworks.
-* **Derived Calculations:** Compiling live return metrics using custom math aliases.
+### 1. Top 10 Movies by Absolute Net Profit
+Isolated high-budget films (`budget > $1M`) with positive box-office returns to identify top-performing cinema assets and calculate exact ROI percentages.
+
+![Top 10 Movies Query Output](images/query1_top_movies.png)
+
+### 2. Financial Performance by Genre Combination
+Aggregated production budgets, gross revenues, and net profits across multi-genre classifications (filtered for categories with at least 5 films to ensure statistical relevance).
+
+![Genre Performance Query Output](images/query2_genre_performance.png)
