@@ -107,3 +107,8 @@ Rows containing zero financial flags were separated into an isolated processing 
 ## 🚀 Key Findings & Conclusions
 1. **High-Yield Genres:** Action and Animation sectors yielded the highest net profit averages, whereas documentary fields showed minimal overhead risks but low scaling opportunities.
 2. **Budget Thresholds:** Data trends indicate diminishing returns on investment for films exceeding specific budget limits without pre-established intellectual property backing.
+
+---
+
+## 🌐 Live Interactive Deployment
+* **Tableau Public Dashboard:** [Movie Industry Business Insights Dashboard](https://public.tableau.com/app/profile/enyinnaya.ahuekwe/viz/MovieIndustryBusinessInsightsDashboard/MovieIndustryBusinessInsightsDashboard#1)
