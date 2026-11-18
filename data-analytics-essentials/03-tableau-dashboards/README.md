@@ -1,10 +1,13 @@
-# 🎨 Business Intelligence & Visualization (Module 8)
+# 🎨 Module 03: Interactive Data Visualization (Tableau Public)
 
-This directory hosts my interactive data viz components, packaged Tableau workbook environments, and executive communication assets.
+## 🔗 Live Interactive Dashboard
+Explore and filter the live executive dashboard on Tableau Public:  
+👉 **[View Live Movie Industry Business Insights Dashboard](PASTE_YOUR_PUBLIC_URL_HERE)**
 
-## 📁 Covered Modules & Deliverables
-* **Module 8: Introduction to Tableau** — Connecting database systems directly into server engines, configuring dimensions vs. measures, and data storytelling.
+## 📊 Dashboard Architecture
+* **Budget-to-Revenue Distribution:** Scatter plot mapping production spending against box-office gross revenue, color-coded by net profit margin.
+* **Executive Revenue Trend:** Historical time-series line chart tracking cumulative industry revenue growth across release years.
+* **Genre Profit Comparison:** Ranked horizontal bar chart evaluating average net profitability across multi-genre classifications.
+* **Global Interactivity:** Configured the `Clean Genres` filter card across all worksheets using the same data source for real-time executive slicing.
 
-## 🛠️ Dashboard Visual Mechanics
-* **Strategic Visual Anchors:** Categorical comparisons via structured bar views, historical trajectories via line graphs, and correlation maps via scatter plots.
-* **Global Interaction Canvas:** Integrated dynamic dashboard controls and synchronized global filter sheets allowing viewers to perform granular, custom data filter sweeps.
+![Tableau Executive Dashboard](images/tableau_executive_dashboard.png)
